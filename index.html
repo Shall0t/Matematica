@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Funciones Lineal y Afin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <header>
+            <h1>Clasificador de Funciones</h1>
+            <p>Forma general: f(x) = bx + c</p>
+        </header>
+        <section class="valores">
+            <p>b = <span id="b">-</span></p>
+            <p>c = <span id="c">-</span></p>
+        </section>
+        <div class="accion-btn">
+            <button id="generar">Generar / Cambiar</button>
+        </div>
+        <section class="resultados">
+            <article id="cajaLineal" class="caja">
+                <h2>FUNCIÓN LINEAL (F.L.)</h2>
+                <ul id="propiedadesLineal"></ul>
+            </article>
+            <article id="cajaAfin" class="caja">
+                <h2>FUNCIÓN AFÍN (F.A.)</h2>
+                <ul id="propiedadesAfin"></ul>
+            </article>
+        </section>
+        <footer class="extras">
+            <a href="https://www.geogebra.org/classic" target="_blank" rel="noopener noreferrer">Abrir GeoGebra Clásico</a>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
