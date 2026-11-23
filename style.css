@@ -1,6 +1,7 @@
 /* Selecciona todo */
 * {
     text-align: center;
+    font-family: cursive;
 }
 
 /* Cuerpo de pagina */
@@ -20,7 +21,7 @@ header {
 }
 
 a {
-    color: rgb(250, 236, 209);
+    color: #faecd1;;
     font-weight: bold;
 }
 
@@ -30,15 +31,16 @@ button {
     border-radius: 1rem;
     font-size: 1rem;
     padding: .5rem 2rem;
-    color: rgb(250, 236, 209);
+    color: #faecd1;
     border: .1rem solid black;
+    font-weight: bold;
 }
 
 /* Letra del mensaje por si es constante o no hay funcion */
 #mensaje {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ed2323;
+    color: #faecd1;;
 }
 
 /* Todos los articulos */
@@ -46,5 +48,5 @@ article {
     border: .1rem solid black;
     margin-bottom: 1rem;
     padding: 1rem;
-    background-color: rgb(250, 236, 209);
+    background-color: #faecd1;
 }
