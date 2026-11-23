@@ -1,7 +1,9 @@
+/* Selecciona todo */
 * {
     text-align: center;
 }
 
+/* Cuerpo de pagina */
 body {
     font-family: Arial, sans-serif;
     width: 40rem;
@@ -9,11 +11,13 @@ body {
     padding: 1rem;
 }
 
+/* Encabezado de pagina */
 header {
     border: .1rem solid black;
     margin-bottom: 1rem;
 }
 
+/* Boton de generar */
 button {
     background-color: #21d127;
     border-radius: 1rem;
@@ -22,12 +26,14 @@ button {
     border: .1rem solid black;
 }
 
+/* Letra del mensaje por si es constante o no hay funcion */
 #mensaje {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ed2323;
 }
 
+/* Todos los articulos */
 article {
     border: .1rem solid black;
     margin-bottom: 1rem;

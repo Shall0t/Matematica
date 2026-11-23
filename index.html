@@ -6,36 +6,47 @@
     <title>Clasificador de funciones</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Cuerpo de pagina -->
 <body>
+    <!-- Encabezado jutno a titulo y formula -->
     <header>
         <h1>Clasificador de funciones</h1>
         <p>f(x) = bx + c</p>
     </header>
+    <!-- Contenido principal -->
     <main>
+        <!-- Contenedor de b -->
         <article>
             <h2>B</h2>
             <p id="b">-</p>
         </article>
+        <!-- Contenedor de c -->
         <article>
             <h2>C</h2>
             <p id="c">-</p>
         </article>
+        <!-- Contenedor de boton -->
         <article>
             <button id="boton">Generar</button>
         </article>
+        <!-- Mensaje por si es constante o no hay funcion -->
         <p id="mensaje"></p>
+        <!-- Contenedor de descripcion de funcion lineal -->
         <article>
             <h2>LINEAL</h2>
             <div id="descripcionLineal"></div>
         </article>
+        <!-- Contenedor de descripcion de funcion lineal -->
         <article id="articuloAfin">
             <h2>AFÍN</h2>
             <div id="descripcionAfin"></div>
         </article>
     </main>
+    <!-- Pie de pagina junto al enlace de goegebra -->
     <footer>
         <a href="https://www.geogebra.org/classic" target="_blank">GeoGebra Classic</a>
     </footer>
+    <!-- Script para enlazar el html con el javascript -->
     <script src="script.js"></script>
 </body>
 </html>
