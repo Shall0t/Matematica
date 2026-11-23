@@ -5,24 +5,32 @@
 
 /* Cuerpo de pagina */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     width: 40rem;
     margin: 2rem 20rem;
     padding: 1rem;
+    background-color: #eb9021;
 }
 
 /* Encabezado de pagina */
 header {
-    border: .1rem solid black;
+    border: .15rem solid rgb(0, 0, 0);
     margin-bottom: 1rem;
+    background-color: #c16e08;
+}
+
+a {
+    color: rgb(250, 236, 209);
+    font-weight: bold;
 }
 
 /* Boton de generar */
 button {
-    background-color: #21d127;
+    background-color: #eb9021;
     border-radius: 1rem;
     font-size: 1rem;
     padding: .5rem 2rem;
+    color: rgb(250, 236, 209);
     border: .1rem solid black;
 }
 
@@ -38,4 +46,5 @@ article {
     border: .1rem solid black;
     margin-bottom: 1rem;
     padding: 1rem;
+    background-color: rgb(250, 236, 209);
 }
