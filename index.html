@@ -2,38 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clasificador de Funciones Lineal y Afin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clasificador de funciones</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <main class="contenedor">
-        <header>
-            <h1>Clasificador de Funciones</h1>
-            <p>Forma general: f(x) = bx + c</p>
-        </header>
-        <section class="valores">
-            <p>b = <span id="b">-</span></p>
-            <p>c = <span id="c">-</span></p>
-        </section>
-        <div class="accion-btn">
-            <button id="generar">Generar / Cambiar</button>
-        </div>
-        <section class="resultados">
-            <article id="cajaLineal" class="caja">
-                <h2>FUNCIÓN LINEAL (F.L.)</h2>
-                <ul id="propiedadesLineal"></ul>
-            </article>
-            <article id="cajaAfin" class="caja">
-                <h2>FUNCIÓN AFÍN (F.A.)</h2>
-                <ul id="propiedadesAfin"></ul>
-            </article>
-        </section>
-        <footer class="extras">
-            <a href="https://www.geogebra.org/classic" target="_blank" rel="noopener noreferrer">Abrir GeoGebra Clásico</a>
-        </footer>
+    <header>
+        <h1>Clasificador de funciones</h1>
+        <p>f(x) = bx + c</p>
+    </header>
+    <main>
+    <article>
+        <h2>B</h2>
+        <p id="b">-</p>
+    </article>
+    <article>
+        <h2>C</h2>
+        <p id="c">-</p>
+    </article>
+    <article>
+        <button id="boton">Generar</button>
+    </article>
+    <p id="mensaje"></p>
+    <article>
+        <h2>LINEAL</h2>
+        <ul id="descripcionLineal"></ul>
+    </article>
+    <article id="articuloAfin">
+        <h2>AFÍN</h2>
+        <ul id="descripcionAfin"></ul>
+    </article>
     </main>
+    <footer>
+        <a href="https://www.geogebra.org/classic" target="_blank">GeoGebra Classic</a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+

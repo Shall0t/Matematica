@@ -1,46 +1,61 @@
-const boton = document.getElementById("generar");
-const b = document.getElementById("b");
-const c = document.getElementById("c");
-const listaLineal = document.getElementById("propiedadesLineal");
-const listaAfin = document.getElementById("propiedadesAfin");
+const boton = document.getElementById("boton");
+const textoB = document.getElementById("b");
+const textoC = document.getElementById("c");
+const mensaje = document.getElementById("mensaje");
+const descripcionLineal = document.getElementById("descripcionLineal");
+const descripcionAfin = document.getElementById("descripcionAfin");
 
-function numeroAleatorio() {
-    return Math.floor(Math.random() * 21) - 10;
-}
 
-boton.addEventListener("click", function() {
-    let b = numeroAleatorio();
-    let c = numeroAleatorio();
+function generar() {
+    descripcionLineal.innerHTML = "";
+    descripcionAfin.innerHTML = "";
+    mensaje.innerText = "";
 
-    b.textContent = b;
-    c.textContent = c;
 
-    listaLineal.innerHTML = "";
-    listaAfin.innerHTML = "";
+    let b = Math.floor(Math.random() * 7) - 3;
+    let c = Math.floor(Math.random() * 7) - 3;
 
-    if (c === 0) {
-        let inclinacion = "";
+
+    textoB.innerText = b;
+    textoC.innerText = c;
+
+
+    if (b == 0 && c == 0) {
+        mensaje.innerText = "No hay función";
+
+
+    } else if (b == 0 && c != 0) {
+        mensaje.innerText = "Función constante";
+
+
+    } else if (c == 0) {
+        let textoPendiente = "";
+
+
         if (b > 0) {
-            inclinacion = "Función creciente (sube de izquierda a derecha).";
-        } else if (b < 0) {
-            inclinacion = "Función decreciente (baja de izquierda a derecha).";
+            textoPendiente = "Función creciente (sube de izquierda a derecha)";
         } else {
-            inclinacion = "Función constante (pendiente 0).";
+            textoPendiente = "Función decreciente (baja de izquierda a derecha)";
         }
 
-        listaLineal.innerHTML = `
-            <li><strong>Ecuación:</strong> f(x) = ${b}x</li>
-            <li><strong>Gráfica:</strong> Línea recta continua.</li>
-            <li><strong>Paso Obligatorio:</strong> Pasa por el origen (0, 0).</li>
-            <li><strong>Pendiente (${b}):</strong> ${inclinacion}</li>
-        `;
+
+        descripcionLineal.innerHTML =
+            "<li><b>Gráfica:</b> Línea recta continua.</li>" +
+            "<li><b>Paso Obligatorio:</b> Pasa por el origen de coordenadas (0, 0).</li>" +
+            "<li><b>Pendiente (b):</b> " + textoPendiente + "</li>";
+
+
     } else {
-        listaAfin.innerHTML = `
-            <li><strong>Ecuación:</strong> f(x) = ${b}x + (${c})</li>
-            <li><strong>Gráfica:</strong> Línea recta que no pasa por el origen.</li>
-            <li><strong>Corte Eje Y:</strong> Interseca en (0, ${c}).</li>
-            <li><strong>Inclinación:</strong> Regulada por pendiente b = ${b}.</li>
-            <li><strong>Traslación:</strong> Se traslada ${c} unidades en el eje Y.</li>
-        `;
+        descripcionAfin.innerHTML =
+            "<li><b>Gráfica:</b> Línea recta que no pasa por el origen.</li>" +
+            "<li><b>Corte Eje Y:</b> Interseca al eje Y en las coordenadas (0, " + c + ").</li>" +
+            "<li><b>Inclinación:</b> Regulada por el valor del coeficiente de pendiente b.</li>" +
+            "<li><b>Traslación:</b> Es una traslación vertical de la función lineal f(x) = bx en " + c + " unidades.</li>";
     }
-});
+}
+
+
+boton.onclick = generar;
+
+
+
